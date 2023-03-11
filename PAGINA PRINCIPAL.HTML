@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Tienda de cine</title>
+<style>
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+}
+
+h1, h2, h3 {
+  margin: 0;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+header {
+  background-color: #000;
+  color: #fff;
+  padding: 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+nav ul {
+  list-style: none;
+  display: flex;
+}
+
+nav ul li {
+  margin-right: 20px;
+}
+
+nav ul li a {
+  color: #fff;
+  text-decoration: none;
+}
+
+main {
+  padding: 20px;
+}
+
+.peliculas {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  margin-top: 20px;
+}
+
+.pelicula {
+  width: calc(33.33% - 20px);
+  background-color: #fff;
+  border-radius: 5px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
+  padding: 20px;
+  margin-bottom: 20px;
+}
+
+.pelicula h3 {
+  font-size: 1.2rem;
+  margin-top: 10px;
+  margin-bottom: 5px;
+}
+
+.pelicula p {
+  font-size: 0.9rem;
+  margin: 0;
+}
+
+.pelicula button {
+  background-color: #000;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  padding: 10px 20px;
+  margin-top: 10px;
+  cursor: pointer;
+}
+
+footer {
+  background-color: #ccc;
+  color: #000;
+  padding: 20px;
+  text-align: center;
+}
+
+</style>
+</head>
+<body>
+  <header>
+    <h1>Tienda de cine</h1>
+    <nav>
+      <ul>
+        <li><a href="#">Inicio</a></li>
+        <li><a href="#">Películas</a></li>
+        <li><a href="#">Merchandising</a></li>
+        <li><a href="Untitled-1.html">Comprar</a></li>
+      </ul>
+    </nav>
+  </header>
+  <main>
+    <section>
+      <h2>Películas destacadas</h2>
+      <ul>
+        <li>
+          
+            <img src="pelicula1.jpg" alt="Póster de película">
+            <h3>Frozen 2</h3>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce id placerat ipsum. Nullam accumsan ipsum nec purus efficitur faucibus. Nam aliquet tellus sed sapien semper, nec ultrices justo faucibus.</p>
+          </a>
+        </li>
+        <li>
+       
+            <img src="pelicula2.jpg" alt="Póster de película">
+            <h3>Joker</h3>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce id placerat ipsum. Nullam accumsan ipsum nec purus efficitur faucibus. Nam aliquet tellus sed sapien semper, nec ultrices justo faucibus.</p>
+          </a>
+        </li>
+        <li>
+          
+            <img src="pelicula3.jpg" alt="Póster de película">
+            <h3>Avengers:Endgame</h3>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce id placerat ipsum. Nullam accumsan ipsum nec purus efficitur faucibus. Nam aliquet tellus sed sapien semper, nec ultrices justo faucibus.</p>
+          </a>
+        </li>
+      </ul>
+    </section>
+    <section>
+      <h2>Merchandising</h2>
+      <ul>
+        <li>
+          
+            <img src="merch1.jpg" alt="Imagen de producto">
+            <h3>Vasos Avengers:Endgame</h3>
+            <p>Precio: $XX.XX</p>
+          </a>
+        </li>
+        <li>
+          
+            <img src="merch2.jpg" alt="Imagen de producto">
+            <h3>Puzzles Frozen 2</h3>
+            <p>Precio: $XX.XX</p>
+          </a>
+        </li>
+      </ul>
+    </section>
+ 
+    <li><a href="#">Inicio</a></li>
+    <li><a href="#">Películas</a></li>
+    <li><a href="#">Series</a></li>
+    <li><a href="#">Contacto</a></li>
+  </ul>
+</nav>
+</header>
+
+<main>
+<h2>Últimos estrenos</h2>
+<div class="peliculas">
+  <div class="pelicula">
+    <img src="spiderman.jpg" alt="Póster de película">
+    <h3>Spider-Man: No Way Home</h3>
+    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce id placerat ipsum. Nullam accumsan ipsum nec purus efficitur faucibus. Nam aliquet tellus sed sapien semper, nec ultrices justo faucibus.</p>
+    <button>Ver detalles</button>
+  </div>
+  <div class="pelicula">
+    <img src="matrix.jpg" alt="Póster de película">
+    <h3>Matrix Resurrections</h3>
+    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce id placerat ipsum. Nullam accumsan ipsum nec purus efficitur faucibus. Nam aliquet tellus sed sapien semper, nec ultrices justo faucibus.</p>
+    <button>Ver detalles</button>
+  </div>
+  <div class="pelicula">
+    <img src="conjuro.jpg" alt="Póster de película">
+    <h3>El Conjuro 3: El diablo me obligó a hacerlo</h3>
+    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce id placerat ipsum. Nullam accumsan ipsum nec purus efficitur faucibus. Nam aliquet tellus sed sapien semper, nec ultrices justo faucibus.</p>
+    <button>Ver detalles</button>
+  </div>
+</div>
+</main>
+
+<footer>
+<p>Tienda de cine &copy; 2023</p>
+</footer>
+
+</body>
+</html>

@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Cinépolis - Compra de Boletos</title>
+    <style>
+        body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #f2f2f2;
+}
+
+h1 {
+  text-align: center;
+  color: #cc0000;
+}
+
+form {
+  width: 50%;
+  margin: 0 auto;
+  background-color: #ffffff;
+  padding: 20px;
+  border-radius: 5px;
+  box-shadow: 0 0 5px #888888;
+}
+
+label {
+  display: block;
+  margin-bottom: 10px;
+}
+
+input[type="text"],
+input[type="email"],
+input[type="tel"],
+input[type="date"],
+input[type="time"] {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 20px;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+  box-sizing: border-box;
+}
+
+select {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 20px;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+  box-sizing: border-box;
+}
+
+textarea {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 20px;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+  box-sizing: border-box;
+}
+
+input[type="submit"] {
+  background-color: #cc0000;
+  color: #ffffff;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+input[type="submit"]:hover {
+  background-color: #990000;
+}
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  background: linear-gradient(to bottom, #2500cc, #daf202);
+}
+
+    </style>
+</head>
+<body>
+	<h1>Cinépolis - Compra de Boletos</h1>
+	<form>
+		<label for="nombre">Nombre:</label>
+		<input type="text" id="nombre" name="nombre" required><br><br>
+
+		<label for="correo">Correo electrónico:</label>
+		<input type="email" id="correo" name="correo" required><br><br>
+
+		<label for="telefono">Teléfono:</label>
+		<input type="tel" id="telefono" name="telefono" required><br><br>
+
+		<label for="pelicula">Película:</label>
+		<select id="pelicula" name="pelicula" required>
+			<option value="">Seleccione una opción</option>
+			<option value="Spider-Man">Spider-Man: No Way Home</option>
+			<option value="matrix">Matrix Resurrections</option>
+			<option value="conjuro">El Conjuro 3: El diablo me obligó a hacerlo</option>
+		</select><br><br>
+
+		<label for="funcion">Función:</label>
+		<select id="funcion" name="funcion" required>
+			<option value="">Seleccione una opción</option>
+			<option value="dia">Mañana (11:00 am)</option>
+			<option value="tarde">Tarde (3:00 pm)</option>
+			<option value="noche">Noche (7:00 pm)</option>
+		</select><br><br>
+
+		<label for="fecha">Fecha:</label>
+		<input type="date" id="fecha" name="fecha" required><br><br>
+
+		<label for="hora">Hora:</label>
+		<input type="time" id="hora" name="hora" required><br><br>
+
+		<label for="cantidad">Cantidad de boletos:</label>
+		<input type="number" id="cantidad" name="cantidad" min="1" max="10" required><br><br>
+
+		<label for="asientos">Asientos:</label>
+		<input type="text" id="asientos" name="asientos" required><br><br>
+
+		<label for="tipo_pago">Tipo de pago:</label>
+		<input type="radio" id="tipo_pago1" name="tipo_pago" value="credito" required>
+		<label for="tipo_pago1">Tarjeta de crédito</label>
+		<input type="radio" id="tipo_pago2" name="tipo_pago" value="debito" required>
+		<label for="tipo_pago2">Tarjeta de débito</label><br><br>
+
+		<label for="idioma">Idioma:</label>
+		<select id="idioma" name="idioma" required>
+			<option value="">Seleccione una opción</option>
+			<option value="es">Español</option>
+			<option value="en">Inglés</option>
+		</select><br><br>
+
+		<label for="tarjeta">Número de tarjeta de crédito:</label>
+		<input type="number" id="tarjeta" name="tarjeta" required><br><br>
+
+		<label for="palomitas">Palomitas:</label>
+		<select id="palomitas" name="palomitas" required>
+			<option value="">Seleccione una opción</option>
+			<option value="chicas">Chicas</option>
+			<option value="medianas">Medianas</option>
+			<option value="grandes">Grandes</option>
+		</select><br><br>
+
+		<label for="refresco">Refresco:</label>
+		<select id="refresco" name="refresco" required>
+			<option value="">Seleccione una opción</option>
+			<option value="chico">Chico</option>
+			<option value="mediano">Mediano</option>
+			<option value="grande">Grande</option>
+		</select><br><br>
+
+		<label for="cupon">Cupón de descuento:</label>
+		<input type="text" id="cupon" name="cupon"><br><br>
+
+		<label for="comentarios">Comentarios adicionales:</label><br>
+		<textarea id="comentarios" name="comentarios" rows="5" cols="40"></textarea><br><br>
+
+		<input type="submit" value="Comprar">
+	</form>
+    
+</body>
+</html>
