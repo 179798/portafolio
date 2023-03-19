@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Práctica 5</title>
+	<link rel="stylesheet" type="text/css" href="estilos.css">
+</head>
+<body>
+	<h2>Práctica 5</h2>
+	<h3>HTML y CSS</h3>
+	<h3>Primavera 2023</h3>
+	<form>
+		<fieldset>
+			<legend>Datos del cliente</legend>
+			<table align="center" width="75%">
+				<tr>
+					<td><label for="nombre">Nombre:</label></td>
+					<td><input type="text" id="nombre" name="nombre" required></td>
+				</tr>
+				<tr>
+					<td><label for="apellido_paterno">Apellido paterno:</label></td>
+					<td><input type="text" id="apellido_paterno" name="apellido_paterno" required></td>
+				</tr>
+				<tr>
+					<td><label for="apellido_materno">Apellido materno:</label></td>
+					<td><input type="text" id="apellido_materno" name="apellido_materno" required></td>
+				</tr>
+				<tr>
+					<td><label for="ciudad">Ciudad:</label></td>
+					<td>
+						<select id="ciudad" name="ciudad">
+                            <option>Aguascalientes</option>
+                            <option>Baja California</option>
+                            <option>Baja California Sur</option>
+                            <option>Campeche</option>
+                            <option>Chiapas</option>
+                              <option>Chihuahua</option>
+                              <option>Ciudad de México</option>
+                              <option>Coahuila</option>
+                              <option>Colima</option>
+                              <option>Durango</option>
+                              <option>Estado de México</option>
+                              <option>Guanajuato</option>
+                              <option>Guerrero</option>
+                              <option>Hidalgo</option>
+                              <option>Jalisco</option>
+                              <option>Michoacán</option>
+                              <option>Morelos</option>
+                              <option>Nayarit</option>
+                              <option>Nuevo León</option>
+                              <option>Oaxaca</option>
+                              <option>Puebla</option>
+                              <option>Querétaro</option>
+                              <option>Quintana Roo</option>
+                              <option>San Luis Potosí</option>
+                              <option>Sinaloa</option>
+                              <option>Sonora</option>
+                              <option>Tabasco</option>
+                              <option>Tamaulipas</option>
+                              <option>Tlaxcala</option>
+                              <option>Veracruz</option>
+                              <option>Yucatán</option>
+                              <option>Zacatecas</option>
+						</select>
+					</td>
+				</tr>
+			</table>
+		</fieldset>
+		<fieldset>
+			<legend>Servicio a contratar</legend>
+			<table align="center" width="75%">
+				<tr>
+					<td><input type="checkbox" id="servicio1" name="servicio1" value="opcion1" checked><label for="servicio1">Línea Telefónica</label></td>
+				</tr>
+				<tr>
+					<td><input type="checkbox" id="servicio2" name="servicio2" value="opcion2" checked><label for="servicio2">Servicio de Internet</label></td>
+				</tr>
+			</table>
+		</fieldset>
+		<fieldset>
+			<legend>Forma de pago</legend>
+			<table align="center" width="75%">
+				<tr>
+                    <td colspan="3"><fieldset>
+                        <legend>Forma de pago</legend>
+                        <input type="radio" id="tarjeta-debito" name="forma-pago" value="tarjeta-debito" checked>
+                        <label for="tarjeta-debito">Tarjeta de débito</label>
+                        <input type="radio" id="tarjeta-credito" name="forma-pago" value="tarjeta-credito">
+                        <label for="tarjeta-credito">Tarjeta de crédito</label>
+                        <input type="radio" id="paypal" name="forma-pago" value="paypal">
+                        <label for="paypal">PayPal</label>
+                        <input type="radio" id="transferencia-bancaria" name="forma-pago" value="transferencia-bancaria">
+                        <label for="transferencia-bancaria">Transferencia bancaria</label>
+                    </fieldset></td>
+                </tr>
+			</table>
+		</fieldset>
+		<div align="center">
+			<input type="submit" value="Enviar">
+			<input type="reset" value="Restablecer">
+	
+        </div>
+	</form>
+</body>
+</html>
