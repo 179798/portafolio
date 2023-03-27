@@ -1,0 +1,328 @@
+/* Estilos globales */
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+h1, h2, h3 {
+    margin: 0;
+}
+
+ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+/* Estilos del encabezado */
+
+header {
+    background-color: #333;
+    color: #fff;
+    padding: 10px;
+}
+
+header h1 {
+    margin: 0;
+}
+
+nav ul {
+    margin: 0;
+    padding: 0;
+    text-align: right;
+}
+
+nav li {
+    display: inline-block;
+    margin-left: 20px;
+}
+
+nav a {
+    color: #fff;
+    text-decoration: none;
+}
+
+nav a:hover {
+    text-decoration: underline;
+}
+
+/* Estilos del banner */
+
+#banner {
+    background-image: url('banner.jpg');
+    background-position: center;
+    background-size: cover;
+    color: #fff;
+    text-align: center;
+    padding: 100px;
+}
+
+/* Estilos de los productos */
+
+#productos {
+    padding: 50px;
+}
+
+#productos li {
+    display: inline-block;
+    margin: 20px;
+    width: 300px;
+    text-align: center;
+}
+
+#productos img {
+    max-width: 100%;
+}
+
+#productos h3 {
+    margin-top: 20px;
+}
+
+#productos form {
+    margin-top: 20px;
+}
+
+#productos button {
+    background-color: #333;
+    border: none;
+    color: #fff;
+    padding: 10px;
+    cursor: pointer;
+}
+
+#productos button:hover {
+    background-color: #444;
+}
+
+/* Estilos del nosotros */
+
+#nosotros {
+    background-color: #f2f2f2;
+    padding: 50px;
+}
+
+/* Estilos del contacto */
+
+#contacto {
+    padding: 50px;
+}
+
+#contacto label, #contacto input, #contacto textarea {
+    display: block;
+    margin-bottom: 10px;
+    width: 100%;
+}
+
+#contacto input, #contacto textarea {
+    padding: 10px;
+}
+
+#contacto button {
+    background-color: #333;
+    border: none;
+    color: #fff;
+    padding: 10px;
+    cursor: pointer;
+}
+
+#contacto button:hover {
+    background-color: #444;
+}
+
+/* Estilos del pie de página */
+
+footer {
+    background-color: #333;
+    color: #fff;
+    padding: 10px;
+    text-align: center;
+}
+/* Estilos del formulario de compra */
+
+#compra {
+    padding: 50px;
+}
+
+#compra label, #compra input, #compra select {
+    display: block;
+    margin-bottom: 10px;
+    width: 100%;
+}
+
+#compra input, #compra select {
+    padding: 10px;
+}
+
+#compra button {
+    background-color: #333;
+    border: none;
+    color: #fff;
+    padding: 10px;
+    cursor: pointer;
+}
+
+#compra button:hover {
+    background-color: #444;
+}
+#titulo
+{
+color: black;
+
+}
+#descrip{
+
+    color: black;
+}
+
+
+nav ul {
+	margin: 0;
+	padding: 0;
+	text-align: right;
+}
+
+nav li {
+	display: inline-block;
+	margin-left: 20px;
+}
+
+nav a {
+	color: #fff;
+	text-decoration: none;
+}
+
+nav a:hover {
+	text-decoration: underline;
+}
+
+#productos {
+	padding: 50px;
+}
+
+#productos h2 {
+	margin-top: 0;
+}
+
+#productos ul {
+	list-style: none;
+	margin: 0;
+	padding: 0;
+}
+
+#productos li {
+	display: inline-block;
+	margin: 20px;
+	text-align: center;
+	vertical-align: top;
+}
+
+#productos img {
+	display: block;
+	margin: 0 auto;
+	max-width: 100%;
+}
+
+#productos
+{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding: 50px;
+    }
+    
+    .producto {
+    background-color: #fff;
+    border: 1px solid #ccc;
+    margin: 20px;
+    padding: 20px;
+    width: 300px;
+    }
+    
+    .producto img {
+    max-width: 100%;
+    }
+    
+    .producto h3 {
+    margin-top: 20px;
+    font-size: 1.2rem;
+    }
+    
+    .producto p {
+    margin-top: 10px;
+    }
+    
+    .producto button {
+    background-color: #333;
+    border: none;
+    color: #fff;
+    padding: 10px;
+    cursor: pointer;
+    margin-top: 20px;
+    }
+    
+    .producto button:hover {
+    background-color: #444;
+    }
+    
+    #ver
+    {
+        color: #fff;
+    }
+    
+    /* Estilos del encabezado */
+    
+    header {
+    background-color: #333;
+    color: #fff;
+    padding: 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    }
+    
+    header a {
+    color: #fff;
+    text-decoration: none;
+    margin-left: 20px;
+    }
+    
+    header a:hover {
+    text-decoration: underline;
+    }
+    
+    header nav {
+    display: flex;
+    align-items: center;
+    }
+    
+    header nav ul {
+    display: flex;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    }
+    
+    header nav li {
+    margin-left: 20px;
+    }
+    
+    header nav a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 1.2rem;
+    }
+    
+    header nav a:hover {
+    text-decoration: underline;
+    }
+    
+    /* Estilos del pie de página */
+    
+    footer {
+    background-color: #333;
+    color: #fff;
+    padding: 10px;
+    text-align: center;
+    }
