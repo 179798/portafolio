@@ -326,3 +326,14 @@ nav a:hover {
     padding: 10px;
     text-align: center;
     }
+.gallery {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-around;
+}
+
+.gallery img {
+	max-width: 300px;
+	max-height: 300px;
+	margin: 10px;
+}
