@@ -1,0 +1,126 @@
+body {
+	background-image:url(playa.jfif);
+	background-size: 100%;
+	margin: 0;
+	padding: 0;
+}
+h1 {
+	position: absolute;
+	top: 0;
+	right: 10px;
+	background-color: #ea7cba;
+	border-radius: 10px;
+	padding: 10px;
+	
+}
+  
+  nav ul {
+    list-style: none;
+
+  }
+  
+  nav ul li {
+    float: left;
+    position: relative;
+  }
+  
+  nav ul li a {
+    display: block;
+    color: #e40000;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    cursor: pointer;
+  }
+  li.dropdown > a {
+    background-color: #e6e6e6; 
+  }
+
+  nav ul li:hover a {
+    color: #fd2626;
+  }
+  
+  nav ul li.dropdown:hover .dropdown-content {
+    display: block;
+
+  }
+  
+  .dropdown-content {
+    display: none;
+    position: relative;
+    background-color: #614d60e5;
+    left: 0;
+    top: 100%;
+  }
+  
+  .dropdown-content a {
+    display: block;
+    width: 100%;
+    text-align: left;
+    padding: 10px;
+    box-sizing: border-box;
+  }
+  
+  
+  .dropdown-content a:hover {
+    background-color: #ffbdbd;
+
+  }
+
+main {
+	margin: 20px;
+}
+
+
+@font-face {
+  font-family: "Fuente 1";
+  src: url("Fuentes/Dancing_Script/DancingScript-VariableFont_wght.ttf");
+}
+
+@font-face {
+  font-family: "Fuente 2";
+  src: url("Fuentes/Dongle/Dongle-Regular.ttf");
+}
+
+@font-face {
+  font-family: "Fuente 3";
+  src: url("Fuentes/DynaPuff/DynaPuff-VariableFont_wdth\,wght.ttf");
+}
+
+@font-face {
+  font-family: "Fuente 4";
+  src: url("Fuentes/Open_Sans/OpenSans-Italic-VariableFont_wdth\,wght.ttf");
+}
+
+@font-face {
+  font-family: "Fuente 5";
+  src: url("Fuentes/Oswald/Oswald-VariableFont_wght.ttf");
+}
+
+#tit {
+  font-family: "Fuente 1", sans-serif;
+ 
+}
+
+#ser1 {
+  font-family: "Fuente 2", sans-serif;
+ 
+}
+
+#ser2 {
+  font-family: "Fuente 3", sans-serif;
+  
+}
+
+#ser3 {
+  font-family: "Fuente 4", sans-serif;
+ 
+}
+
+#ser4{
+  font-family: "Fuente 5", sans-serif;
+}
+
+
+
+
