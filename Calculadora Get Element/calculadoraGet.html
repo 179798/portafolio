@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Calculadora</title>
+	<link rel="stylesheet" type="text/css" href="estiloscal.css">
+</head>
+<script src="get.js"></script>
+<body>
+	<div class="container">
+		<h1>Calculadora</h1>
+		<form>
+			<label for="num1">Número 1:</label>
+			<input type="number" id="num1">
+			<br>
+			<label for="num2">Número 2:</label>
+			<input type="number" id="num2">
+
+			<br>
+
+			<input type="button" value="Sumar" onclick="suma()">
+            <input type="button" value="Restar" onclick="resta()">
+            <input type="button" value="Multiplicar" onclick="multiplicacion()">
+            <input type="button" value="Dividir" onclick="division()">
+			
+		</form>
+
+		<p id="result" ></p>
+	</div>
+
+	
+</body>
+</html>
