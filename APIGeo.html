@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <title>xd</title>
+    <script>
+    // Define una función llamada obtenerUbicacion
+    function obtenerUbicacion() {
+      // Verifica si el navegador del usuario soporta la API de geolocalización web
+      if (navigator.geolocation) {
+        // Si el navegador soporta la API de geolocalización web, obtiene la ubicación actual del usuario
+        navigator.geolocation.getCurrentPosition(function(posicion) {
+          // Almacena la latitud y longitud del usuario en variables
+          var latitud = posicion.coords.latitude;
+          var longitud = posicion.coords.longitude;
+          // Muestra un mensaje con la ubicación actual del usuario
+          alert('Doxxeado Puto ' + latitud + ', ' + longitud);
+        });
+      } else {
+        // Si el navegador no soporta la API de geolocalización web, muestra un mensaje indicándolo
+        alert('Tu navegador no soporta la Web Geolocation API');
+      }
+    }
+    </script>
+  </head>
+  <body>
+    <h1>No clickees este boton</h1>
+    
+    <button onclick="obtenerUbicacion()">NO</button>
+  </body>
+</html>
