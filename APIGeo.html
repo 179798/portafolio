@@ -2,7 +2,7 @@
 <html>
   <head>
     <meta charset="UTF-8">
-    <title>xd</title>
+    <title>Ejemplo de la Web Geolocation API</title>
     <script>
     // Define una función llamada obtenerUbicacion
     function obtenerUbicacion() {
@@ -14,7 +14,7 @@
           var latitud = posicion.coords.latitude;
           var longitud = posicion.coords.longitude;
           // Muestra un mensaje con la ubicación actual del usuario
-          alert('Doxxeado Puto ' + latitud + ', ' + longitud);
+          alert('Tu ubicación actual es: ' + latitud + ', ' + longitud);
         });
       } else {
         // Si el navegador no soporta la API de geolocalización web, muestra un mensaje indicándolo
@@ -24,8 +24,8 @@
     </script>
   </head>
   <body>
-    <h1>No clickees este boton</h1>
-    
-    <button onclick="obtenerUbicacion()">NO</button>
+    <h1>Ejemplo de la Web Geolocation API</h1>
+    <p>Haz clic en el botón para obtener tu ubicación actual:</p>
+    <button onclick="obtenerUbicacion()">Obtener ubicación</button>
   </body>
 </html>
