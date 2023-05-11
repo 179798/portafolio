@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Obtener totales del formulario</title>
+	<!-- Se enlaza el archivo CSS -->
+    <link rel="stylesheet" href="estilos.css">
+	<!-- Se especifica la codificación del documento -->
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+	<!-- Se enlazan las fuentes de Google Fonts -->
+	<link href="https://fonts.googleapis.com/css?family=Charmonman" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css?family=Roboto+Condensed" rel="stylesheet">	
+	<link rel="stylesheet" href="estilosAsk.css">
+</head>
+<!-- Se define la función para calcular la calificación -->
+<script>
+var total;
+function califica()
+    {
+    // Se inicializa el total a 0
+    var total=0;
+    	for (var x=1;x<=4;x++)
+    	{
+        // Se inicializa el resultado a 0 y se obtiene el nombre del grupo de botones de radio correspondiente a la pregunta actual
+        var res=0;
+        var nom="r"+x;
+        var resul=document.getElementsByName(nom);
+        // Se recorre el grupo de botones de radio correspondiente a la pregunta actual y se obtiene el valor de la opción seleccionada
+        for(var i=0;i<resul.length;i++)
+        {
+            if(resul[i].checked==true)
+                res=parseInt(resul[i].value);
+        }
+        // Se suma el valor obtenido al total
+        total=total+res;
+        // Se muestra el total en el elemento con ID "total"
+        document.getElementById("total").innerHTML="Puntos obtenidos: "+total+" Puntos";
+        }
+        // Se muestra un comentario según el total obtenido
+        if(total==20)
+        	document.getElementById("comentario").innerHTML="EXCELENTE!!!";
+        else
+        	if(total==15)
+        	document.getElementById("comentario").innerHTML="Regular!!";
+        else
+        	if(total<=15)
+        	document.getElementById("comentario").innerHTML="Estudia un poco más";
+    }
+</script>
+<body>
+    <!-- Se crea un contenedor con ID "contiene" -->
+    <div id="contiene">
+	<h1>Responde la encuesta</h1>
+	<h2>Tu opinión es importante</h2>
+<!-- Se crea un formulario -->
+<form>
+<div>
+	
+	<ul>
+		<!-- Se crea la pregunta 1 y sus opciones -->
+		<li>Pregunta 1</li>
+		<input type="radio" name="r1" id="r1" value="5"/>Respuesta 1 Pregunta 1<br/>
+		<input type="radio" name="r1" id="r1" value="0"/>Respuesta 2 Pregunta 1<br/>
+		<input type="radio" name="r1" id="r1" value="0"/>Respuesta 3 Pregunta 1<br/>
+		<input type="radio" name="r1" id="r1" value="0"/>Respuesta 4 Pregunta 1<br/>
+		
+		<!-- Se crea la pregunta 2 y sus opciones -->
+		<li>Pregunta 2</li>
+		<input type="radio" name="r2" id="r2" value="5"/>Respuesta 1 Pregunta 2<br/>
+		<input type="radio" name="r2" id="r2" value="0"/>Respuesta 2 Pregunta 2<br/>
+		<input type="radio" name="r2" id="r2" value="0"/>Respuesta 3 Pregunta 2<br/>
+		<input type="radio" name="r2" id="r2" value="0"/>Respuesta 4 Pregunta 2<br/>
+		
+		<li>Pregunta 3</li>
+		<input type="radio" name="r3" id="r3" value="5"/>Respuesta 1 Pregunta 3<br/>
+		<input type="radio" name="r3" id="r3" value="0"/>Respuesta 2 Pregunta 3<br/>
+		<input type="radio" name="r3" id="r3" value="0"/>Respuesta 3 Pregunta 3<br/>
+		<input type="radio" name="r3" id="r3" value="0"/>Respuesta 4 Pregunta 3<br/>
+
+		<li>Pregunta 4</li>
+		<input type="radio" name="r4" id="r4" value="5"/>Respuesta 1 Pregunta 4<br/>
+		<input type="radio" name="r4" id="r4" value="0"/>Respuesta 2 Pregunta 4<br/>
+		<input type="radio" name="r4" id="r4" value="0"/>Respuesta 3 Pregunta 4<br/>
+		<input type="radio" name="r4" id="r4" value="0"/>Respuesta 4 Pregunta 4<br/>
+</ul>
+</div>
+<input type="button" value="Calificar" onclick="califica()">
+</form>
+<p></p>
+<p id="total">   </p>
+<p id="comentario">   </p>
+<iframe frameborder="0" width="600" height="500"></iframe>
+</div>
+</body>
+</html>
+		

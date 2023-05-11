@@ -1,0 +1,79 @@
+/* Estilos para el encabezado */
+h1 {
+font-family: 'Charmonman', cursive;
+font-size: 36px;
+text-align: center;
+margin-top: 50px;
+}
+
+h2 {
+font-family: 'Roboto Condensed', sans-serif;
+font-size: 24px;
+text-align: center;
+margin-bottom: 30px;
+}
+
+/* Estilos para las preguntas */
+ul {
+list-style: none;
+padding: 0;
+margin: 0 0 30px;
+}
+
+li {
+font-family: 'Roboto Condensed', sans-serif;
+font-size: 18px;
+margin-bottom: 10px;
+}
+
+input[type="radio"] {
+margin-left: 10px;
+}
+
+/* Estilos para el botón de calificar */
+input[type="button"] {
+display: block;
+margin: 30px auto;
+font-family: 'Roboto Condensed', sans-serif;
+font-size: 18px;
+background-color: #008CBA;
+color: #fff;
+border: none;
+border-radius: 5px;
+padding: 10px 20px;
+cursor: pointer;
+}
+
+input[type="button"]:hover {
+background-color: #006B8F;
+}
+
+/* Estilos para los resultados */
+#total, #comentario {
+font-family: 'Roboto Condensed', sans-serif;
+font-size: 18px;
+text-align: center;
+margin-top: 30px;
+}
+
+#comentario {
+font-weight: bold;
+}
+
+/* Estilos para el contenedor principal */
+#contiene {
+max-width: 800px;
+margin: 0 auto;
+padding: 30px;
+border: 1px solid #ccc;
+border-radius: 5px;
+background-color: #fff;
+box-shadow: 0 0 10px rgba(0,0,0,0.2);
+}
+
+/* Estilos para el iframe */
+iframe {
+display: block;
+margin: 30px auto;
+border: none;
+}
