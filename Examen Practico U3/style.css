@@ -1,0 +1,52 @@
+body {
+    font-family: Arial, sans-serif;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+  }
+ 
+  form {
+    position: absolute;
+    width: 500px;
+    padding: 50px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  }
+  form h1 {
+    position: absolute; 
+    top: 0;
+    left: 0;
+    margin: 0;
+    font-size: 18px;
+  }
+  
+  
+  input[type="text"],
+  input[type="date"],
+  input[type="submit"] 
+  {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+  }
+  
+  input[type="submit"] {
+    background-color: #e77de7;
+    color: white;
+    font-weight: bold;
+    cursor: pointer;
+  }
+
+  img {
+    width: 200px;
+    margin-top: 20px;
+  }
+  
+  .message {
+    margin-top: 20px;
+  }
