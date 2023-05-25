@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Videojuegos Online</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>Videojuegos Online</h1>
+        <nav>
+            <ul>
+                <li><a href="#">Inicio</a></li>
+                <li><a href="productos.html">Productos</a></li>
+                <li><a href="#">Nosotros</a></li>
+                <li><a href="preguntas.html">Contacto</a></li>
+                <li><a href="sugerencias.html">Sugerencias</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section id="banner">
+            <h2 id="titulo">Bienvenido a Videojuegos Online</h2>
+            <p id="descrip">Encuentra aquí los mejores juegos para PC, PlayStation, Xbox y más</p>
+        </section>
+
+        <section id="productos">
+            <h2>Nuestros productos</h2>
+            <ul>
+              <li>
+                <div class="producto">
+                  <img src="resident.jpg" alt="Producto 1">
+                  <h3>Producto 1</h3>
+                  <form action="#" method="POST">
+                    <label for="cantidad1">Cantidad:</label>
+                    <input type="number" name="cantidad1" id="cantidad1" min="1" max="10" required>
+                    <button type="submit">Agregar al carrito</button>
+                    <button type="button" onclick="window.location.href='producto1.html'">Ver producto</button>
+                  </form>
+                </div>
+              </li>
+              <li>
+                <div class="producto">
+                  <img src="cyber.jpg" alt="Producto 2">
+                  <h3>Producto 2</h3>
+                  <form action="#" method="POST">
+                    <label for="cantidad2">Cantidad:</label>
+                    <input type="number" name="cantidad2" id="cantidad2" min="1" max="10" required>
+                    <button type="submit">Agregar al carrito</button>
+                    <button type="button" onclick="window.location.href='producto2.html'">Ver producto</button>
+                  </form>
+                </div>
+              </li>
+              <li>
+                <div class="producto">
+                  <img src="project.jpg" alt="Producto 3">
+                  <h3>Producto 3</h3>
+                  <form action="#" method="POST">
+                    <label for="cantidad3">Cantidad:</label>
+                    <input type="number" name="cantidad3" id="cantidad3" min="1" max="10" required>
+                    <button type="submit">Agregar al carrito</button>
+                    <button type="button" onclick="window.location.href='producto3.html'">Ver producto</button>
+                  </form>
+                </div>
+              </li>
+            </ul>
+          </section>
+          
+
+        <section id="nosotros">
+            <h2>Nosotros</h2>
+            <p>Somos una tienda de videojuegos en línea comprometida con ofrecer los mejores productos a nuestros clientes. Contamos con una amplia selección de juegos para todas las plataformas, y nos esforzamos por ofrecer un servicio de calidad y atención al cliente excepcional.</p>
+        </section>
+
+        <section id="compra">
+            <h2>Compra de videojuegos</h2>
+            <form action="#" method="POST">
+                <label for="nombre">Nombre completo:</label>
+                <input type="text" name="nombre" id="nombre" required>
+
+                <label for="direccion">Dirección de envío:</label>
+                <input type="text" name="direccion" id="direccion" required>
+
+                <label for="tarjeta">Tarjeta de crédito:</label>
+               
+                <input type="text" name="tarjeta" id="tarjeta" pattern="[0-9]{16}" required>
+                <small>Ingresa los 16 dígitos de tu tarjeta de crédito sin espacios ni guiones</small>
+    
+                <label for="fecha">Fecha de expiración:</label>
+                <input type="month" name="fecha" id="fecha" required>
+    
+                <label for="cvv">CVV:</label>
+                <input type="text" name="cvv" id="cvv" pattern="[0-9]{3}" required>
+                <small>Ingresa los 3 dígitos de seguridad de tu tarjeta de crédito</small>
+    
+                <button type="submit">Realizar compra</button>
+            </form>
+        </section>
+    </main>
+    
+    <footer>
+        <p>&copy; 2023 Videojuegos Online</p>
+    </footer>
+</body>
+</html>    

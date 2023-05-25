@@ -1,0 +1,104 @@
+/* Estilos generales */
+body {
+    font-family: Arial, sans-serif;
+    background-color: white;
+    color: black;
+    margin: 0;
+    padding: 20px;
+  }
+  
+  h1, h2 {
+    color: black;
+    margin-bottom: 20px;
+  }
+  
+  .question {
+    font-weight: bold;
+    margin-bottom: 10px;
+  }
+  
+  .answer {
+    margin-bottom: 20px;
+  }
+  
+  ul {
+    padding: 0;
+    margin: 0;
+    list-style: none;
+  }
+  
+  li {
+    margin-bottom: 5px;
+  }
+  
+  a {
+    color: rgb(255, 255, 255);
+    text-decoration: none;
+  }
+  
+  a:hover {
+    text-decoration: underline;
+  }
+  
+  /* Estilos específicos para secciones */
+  .help, .social {
+    margin-top: 40px;
+  }
+  
+  .help h2, .social h2 {
+    font-size: 24px;
+    margin-bottom: 10px;
+  }
+  
+  .help p, .social p {
+    margin-bottom: 15px;
+  }
+  
+  /* Estilos para los enlaces en listas */
+  ul li a {
+    color: black;
+    text-decoration: underline;
+  }
+  
+  ul li a:hover {
+    text-decoration: none;
+  }
+  #title{
+    color: white;
+  }
+  #inde{
+    color: white;
+
+  }
+  header {
+    background-color: #333;
+    color: #fff;
+    padding: 10px;
+}
+
+header h1 {
+    margin: 0;
+}
+
+nav ul {
+    margin: 0;
+    padding: 0;
+    text-align: right;
+    color: white;
+}
+
+nav li {
+    display: inline-block;
+    margin-left: 20px;
+    
+}
+
+nav a {
+    color: #fff;
+    text-decoration: none;
+}
+
+nav a:hover {
+    text-decoration: underline;
+    
+}

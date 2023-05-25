@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Encuesta de Venta de Videojuegos</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="styleEncuesta.css">
+</head>
+<body>
+  <h1>Encuesta de Venta de Videojuegos</h1>
+  
+  <form action="submit.php" method="POST">
+    <label for="preferencia">Géneros de videojuegos que te interesan:</label>
+
+    <input type="checkbox" id="accion" name="preferencia" value="accion" label for="accion">Acción</label>
+    <br>
+    <input type="checkbox" id="aventura" name="preferencia" value="aventura" label for="aventura">Aventura</label>
+    <br>
+    <input type="checkbox" id="estrategia" name="preferencia" value="estrategia" label for="estrategia">Estrategia</label>
+    <br>
+    <input type="checkbox" id="rol" name="preferencia" value="rol" label for="rol">RPG</label>
+    <br>
+    <input type="checkbox" id="deporte" name="preferencia" value="deporte" label for="deporte">Deporte</label>
+    <br>
+    <input type="checkbox" id="shooter" name="preferencia" value="shooter" label for="shooter">Shooter</label>
+    <br>
+    <input type="checkbox" id="simulacion" name="preferencia" value="simulacion" label for="simulacion">Simulación</label>
+    <br>
+    <input type="checkbox" id="puzzle" name="preferencia" value="puzzle" label for="puzzle">Puzzle</label>
+    <br>
+    <label for="opinion">Opinión sobre la calidad de los juegos actuales:</label>
+    <input type="radio" id="excelente" name="opinion" value="excelente" label for="excelente">Excelente</label>
+    <br>
+    <input type="radio" id="bueno" name="opinion" value="bueno" label for="bueno">Bueno</label>
+    <br>
+    <input type="radio" id="regular" name="opinion" value="regular" label for="regular">Regular</label>
+    <br>
+    <input type="radio" id="malo" name="opinion" value="malo" label for="malo">Malo</label>
+    
+    <label for="preferencia-plataforma">Plataformas de videojuegos preferidas:</label>
+    <select id="preferencia-plataforma" name="preferencia-plataforma" multiple required>
+      <option value="pc">PC</option>
+      <option value="playstation">PlayStation</option>
+      <option value="xbox">Xbox</option>
+      <option value="nintendo">Nintendo</option>
+      <option value="mobile">Mobile</option>
+      <option value="otro">Otro</option>
+    </select>
+    
+    <label for="comentario">Comentarios adicionales:</label>
+    <textarea id="comentario" name="comentario" rows="5" required></textarea>
+    
+    <button type="submit">Enviar encuesta</button>
+  </form>
+</body>
+</html>
